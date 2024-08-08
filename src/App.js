@@ -1,12 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-import { AddMinus } from './components/addMinus';
+import "./App.css";
+import { AddMinus } from "./components/addMinus";
 
 function App() {
   return (
-    <div className="App">
-      <AddMinus/>
-      <AddMinus/>
+    <div className="container">
+      <AddMinus title="Quantity" />
+      <AddMinus title="Money" />
     </div>
   );
 }
