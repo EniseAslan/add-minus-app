@@ -14,6 +14,9 @@ function App() {
     setCount((down) => down - 1);
   };
 
+
+
+
   return (
     <>
       <h1>
@@ -21,7 +24,7 @@ function App() {
       </h1>
       <body>
 <div class= "general">
-      <ButtonQuantity onClick={Down} innerText={"-"} className="left-btn" />
+      <ButtonQuantity onClick={Down} innerText={"-"} className="left-btn"  disabled={sayi === 0}/>
       <text class="text"> {sayi} </text>
       <ButtonQuantity onClick={Up} innerText={"+"} className="right-btn"/>
       

@@ -5,10 +5,11 @@ const ButtonQuantity =({
   style,
   innerText,
   onClick,
-  className
+  className,
+  disabled
 })=>{
 return(
-  <button onClick={onClick} className ={className} style={style}
+  <button onClick={onClick} className ={className} style={style} disabled={disabled}
  >
   {innerText}
 
